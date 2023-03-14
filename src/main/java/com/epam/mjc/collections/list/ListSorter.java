@@ -40,14 +40,6 @@ public class ListSorter {
         }
         System.out.println(stringList);
     }
-
-    public static void main(String[] args) {
-        ListSorter sorter = new ListSorter();
-        List<String> list1 = new ArrayList<>(List.of("7", "10", "6", "-7", "-2", "0", "-2", "-23"));
-        List<String> list = new ArrayList<>(List.of("-5", "-12", "0", "20", "9", "-20", "37"));
-        sorter.sort(list);
-        sorter.sort(list1);
-    }
 }
 
 class ListComparator implements Comparator<String> {
